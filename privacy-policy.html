@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ToneFix — Privacy Policy</title>
+<meta name="description" content="Privacy Policy for ToneFix — what we collect, why, and how you're in control.">
+
+<!--
+  Privacy Policy for ToneFix — published by Gulshid Zada.
+  Update the "last updated" date at the top of the visible page whenever
+  this document changes materially.
+-->
+
+<style>
+  :root {
+    --bg: #faf9f6;
+    --surface: #ffffff;
+    --ink: #1b2430;
+    --ink-soft: #545e6b;
+    --ink-faint: #8891998a;
+    --coral: #d9642f;
+    --coral-soft: #f2e3d8;
+    --teal: #3f9c8d;
+    --teal-soft: #dcebe8;
+    --line: #e4e0d6;
+    --line-strong: #d3cec1;
+    --radius: 3px;
+    --serif: "Fraunces", Georgia, "Times New Roman", serif;
+    --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: var(--coral); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:hover { color: #b5501f; }
+  a:focus-visible, button:focus-visible, summary:focus-visible {
+    outline: 2px solid var(--teal);
+    outline-offset: 2px;
+  }
+
+  .shell {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: 240px minmax(0, 720px);
+    gap: 64px;
+    align-items: start;
+  }
+
+  /* ── Header ─────────────────────────────────────────────────────── */
+
+  header.top {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 56px 24px 40px;
+  }
+
+  .mark {
+    display: inline-flex;
+    align-items: flex-end;
+    gap: 3px;
+    height: 26px;
+    margin-bottom: 22px;
+  }
+  .mark span {
+    display: block;
+    width: 5px;
+    border-radius: 2px;
+    background: linear-gradient(180deg, var(--coral), var(--teal));
+  }
+  .mark span:nth-child(1) { height: 40%; }
+  .mark span:nth-child(2) { height: 65%; }
+  .mark span:nth-child(3) { height: 100%; }
+  .mark span:nth-child(4) { height: 78%; }
+  .mark span:nth-child(5) { height: 50%; }
+
+  .wordmark {
+    font-family: var(--sans);
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.01em;
+    color: var(--ink-soft);
+    margin-left: 10px;
+    position: relative;
+    top: -1px;
+  }
+
+  h1.title {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: clamp(2.4rem, 5vw, 3.4rem);
+    line-height: 1.05;
+    margin: 0 0 14px;
+    max-width: 14ch;
+  }
+
+  .dek {
+    font-size: 1.08rem;
+    color: var(--ink-soft);
+    max-width: 58ch;
+    margin: 0 0 18px;
+  }
+
+  .meta-line {
+    font-size: 0.88rem;
+    color: var(--ink-faint);
+  }
+
+  /* ── Sidebar nav ────────────────────────────────────────────────── */
+
+  nav.toc {
+    position: sticky;
+    top: 40px;
+    font-size: 0.89rem;
+  }
+  nav.toc .toc-label {
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 10px;
+    font-size: 0.82rem;
+  }
+  nav.toc ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-left: 1px solid var(--line);
+  }
+  nav.toc li { margin: 0; }
+  nav.toc a {
+    display: block;
+    padding: 7px 0 7px 16px;
+    margin-left: -1px;
+    border-left: 1px solid transparent;
+    color: var(--ink-soft);
+    text-decoration: none;
+  }
+  nav.toc a:hover { color: var(--ink); border-left-color: var(--line-strong); }
+
+  details.toc-mobile { display: none; }
+
+  /* ── Article ────────────────────────────────────────────────────── */
+
+  main.doc { min-width: 0; padding-bottom: 100px; }
+
+  .callout {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--teal);
+    padding: 18px 22px;
+    margin: 0 0 48px;
+    font-size: 0.96rem;
+    color: var(--ink-soft);
+  }
+  .callout strong { color: var(--ink); }
+
+  section.sec {
+    padding-top: 44px;
+    margin-top: 44px;
+    border-top: 1px solid var(--line);
+    scroll-margin-top: 24px;
+  }
+  section.sec:first-of-type { border-top: none; margin-top: 0; padding-top: 0; }
+
+  .sec-num {
+    font-family: var(--sans);
+    font-weight: 700;
+    font-size: 0.8rem;
+    color: var(--teal);
+    letter-spacing: 0.02em;
+    margin-bottom: 6px;
+  }
+
+  h2 {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: 1.55rem;
+    margin: 0 0 16px;
+    line-height: 1.25;
+  }
+
+  h3 {
+    font-family: var(--sans);
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 28px 0 10px;
+    color: var(--ink);
+  }
+
+  p { margin: 0 0 16px; color: var(--ink); }
+  .doc p, .doc li { color: #2b3542; }
+
+  ul, ol.plain { padding-left: 22px; margin: 0 0 16px; }
+  li { margin-bottom: 8px; }
+
+  /* ── Tables ─────────────────────────────────────────────────────── */
+
+  .tbl-wrap {
+    overflow-x: auto;
+    margin: 0 0 24px;
+    border: 1px solid var(--line);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.92rem;
+    background: var(--surface);
+  }
+  th, td {
+    text-align: left;
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  thead th {
+    background: #f4f2ec;
+    font-weight: 700;
+    font-size: 0.78rem;
+    color: var(--ink-soft);
+    white-space: nowrap;
+  }
+  tbody tr:last-child td { border-bottom: none; }
+  td.tag {
+    white-space: nowrap;
+    font-weight: 600;
+  }
+
+  .pill {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 20px;
+  }
+  .pill.on   { background: var(--teal-soft); color: #1f5e54; }
+  .pill.off  { background: var(--coral-soft); color: #93400f; }
+  .pill.local{ background: #eceae2; color: #4a4438; }
+
+  /* ── Footer ─────────────────────────────────────────────────────── */
+
+  footer.foot {
+    border-top: 1px solid var(--line);
+    margin-top: 20px;
+    padding-top: 28px;
+    font-size: 0.86rem;
+    color: var(--ink-faint);
+  }
+  footer.foot a { color: var(--ink-soft); }
+
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.85em;
+    background: #f0eee6;
+    padding: 1px 5px;
+    border-radius: 3px;
+  }
+
+  /* ── Responsive ─────────────────────────────────────────────────── */
+
+  @media (max-width: 880px) {
+    .shell { grid-template-columns: 1fr; gap: 0; }
+    nav.toc.desktop { display: none; }
+    details.toc-mobile {
+      display: block;
+      margin-bottom: 36px;
+      border: 1px solid var(--line);
+      background: var(--surface);
+    }
+    details.toc-mobile summary {
+      cursor: pointer;
+      padding: 14px 18px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      list-style: none;
+    }
+    details.toc-mobile summary::-webkit-details-marker { display: none; }
+    details.toc-mobile ol {
+      list-style: none;
+      margin: 0;
+      padding: 0 18px 16px;
+    }
+    details.toc-mobile a {
+      display: block;
+      padding: 6px 0;
+      color: var(--ink-soft);
+      text-decoration: none;
+      font-size: 0.88rem;
+    }
+    header.top { padding: 40px 20px 28px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="mark" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+  <span class="wordmark">ToneFix</span>
+  <h1 class="title">Privacy Policy</h1>
+  <p class="dek">This explains what ToneFix collects when you rewrite a message, the tone it's spoken in, and who — if anyone — sees that information besides you.</p>
+  <p class="meta-line">Effective and last updated: September 13, 2026 · Applies to the ToneFix app for Android</p>
+</header>
+
+<div class="shell">
+  <nav class="toc desktop" aria-label="Table of contents">
+    <div class="toc-label">On this page</div>
+    <ol>
+      <li><a href="#glance">Data at a glance</a></li>
+      <li><a href="#collect">Information we collect</a></li>
+      <li><a href="#permissions">App permissions</a></li>
+      <li><a href="#gemini">How rewriting works (Gemini)</a></li>
+      <li><a href="#storage">How your data is stored</a></li>
+      <li><a href="#notifications">Notifications</a></li>
+      <li><a href="#third-party">Third-party services</a></li>
+      <li><a href="#retention">Retention &amp; deletion</a></li>
+      <li><a href="#rights">Your rights &amp; choices</a></li>
+      <li><a href="#children">Children's privacy</a></li>
+      <li><a href="#security">Security</a></li>
+      <li><a href="#transfers">International transfers</a></li>
+      <li><a href="#changes">Changes to this policy</a></li>
+      <li><a href="#contact">Contact us</a></li>
+    </ol>
+  </nav>
+
+  <main class="doc">
+
+    <div class="callout">
+      <strong>In short:</strong> the text you type or speak is sent to Google's Gemini API to be rewritten, and — only if you choose to save it — a copy is stored under an anonymous account so you can revisit it later. We don't collect your name, email, or contacts, and we don't sell your data to anyone.
+    </div>
+
+    <details class="toc-mobile">
+      <summary>On this page</summary>
+      <ol>
+        <li><a href="#glance">Data at a glance</a></li>
+        <li><a href="#collect">Information we collect</a></li>
+        <li><a href="#permissions">App permissions</a></li>
+        <li><a href="#gemini">How rewriting works (Gemini)</a></li>
+        <li><a href="#storage">How your data is stored</a></li>
+        <li><a href="#notifications">Notifications</a></li>
+        <li><a href="#third-party">Third-party services</a></li>
+        <li><a href="#retention">Retention &amp; deletion</a></li>
+        <li><a href="#rights">Your rights &amp; choices</a></li>
+        <li><a href="#children">Children's privacy</a></li>
+        <li><a href="#security">Security</a></li>
+        <li><a href="#transfers">International transfers</a></li>
+        <li><a href="#changes">Changes to this policy</a></li>
+        <li><a href="#contact">Contact us</a></li>
+      </ol>
+    </details>
+
+    <section class="sec" id="glance">
+      <div class="sec-num">01</div>
+      <h2>Data at a glance</h2>
+      <p>A quick summary before the full detail below — this table maps directly onto the categories Google Play's Data Safety section asks about.</p>
+      <div class="tbl-wrap">
+        <table>
+          <thead>
+            <tr><th>Category</th><th>Collected?</th><th>Leaves your device?</th><th>Shared with</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="tag">Message text you rewrite</td><td><span class="pill on">Yes</span></td><td><span class="pill on">Yes</span></td><td>Google (Gemini API), Firebase — only if you save it</td></tr>
+            <tr><td class="tag">Voice recordings</td><td><span class="pill local">Transcribed only</span></td><td><span class="pill local">Not stored as audio</span></td><td>On-device speech recognition; text output follows the row above</td></tr>
+            <tr><td class="tag">Name, email, phone number</td><td><span class="pill off">No</span></td><td>—</td><td>—</td></tr>
+            <tr><td class="tag">Contacts / photos / files</td><td><span class="pill off">No</span></td><td>—</td><td>—</td></tr>
+            <tr><td class="tag">Precise location</td><td><span class="pill off">No</span></td><td>—</td><td>—</td></tr>
+            <tr><td class="tag">Anonymous device/account ID</td><td><span class="pill on">Yes</span></td><td><span class="pill on">Yes</span></td><td>Firebase (Google)</td></tr>
+            <tr><td class="tag">Usage stats (tones used, streaks)</td><td><span class="pill local">Yes, on-device only</span></td><td><span class="pill off">No</span></td><td>Nobody — stored locally</td></tr>
+            <tr><td class="tag">Crash &amp; performance diagnostics</td><td><span class="pill on">Yes</span></td><td><span class="pill on">Yes</span></td><td>Sentry</td></tr>
+            <tr><td class="tag">Push notification token</td><td><span class="pill on">Yes</span></td><td><span class="pill on">Yes</span></td><td>Firebase Cloud Messaging (Google)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Full explanations for each row are below.</p>
+    </section>
+
+    <section class="sec" id="collect">
+      <div class="sec-num">02</div>
+      <h2>Information we collect</h2>
+
+      <h3>Content you provide</h3>
+      <ul>
+        <li><strong>Text you type or paste</strong> to be rewritten in a different tone, including text shared into ToneFix from other apps via the share sheet.</li>
+        <li><strong>Voice input</strong> for the Voice-to-Tone feature — your speech is transcribed to text; ToneFix does not keep the audio recording itself.</li>
+        <li><strong>Custom tones, saved snippets, and favorites</strong> you create.</li>
+        <li><strong>Feedback messages</strong> you submit through "Report a Bug" or "Request a Feature" — these include your message text, app version, and platform, but no email address unless you choose to include one in the message itself.</li>
+      </ul>
+
+      <h3>Automatically collected</h3>
+      <ul>
+        <li><strong>An anonymous device identifier</strong>, created via Firebase Anonymous Authentication the first time you open the app. It isn't linked to your name, email, or any other account you may hold.</li>
+        <li><strong>App diagnostics</strong> — crash reports and performance data (see <a href="#third-party">Third-party services</a>).</li>
+        <li><strong>Local usage statistics</strong> — which tones you use and how often — kept only on your device to power the in-app Analytics screen. This never leaves your phone.</li>
+      </ul>
+
+      <h3>What we deliberately don't collect</h3>
+      <ul>
+        <li>Your name, email address, or phone number</li>
+        <li>Your contacts, photos, or files, beyond text you explicitly share into the app</li>
+        <li>Precise or coarse location</li>
+        <li>Browsing history outside the app</li>
+      </ul>
+    </section>
+
+    <section class="sec" id="permissions">
+      <div class="sec-num">03</div>
+      <h2>App permissions</h2>
+      <p>Each Android permission ToneFix requests maps to a specific feature — nothing is requested "just in case."</p>
+      <div class="tbl-wrap">
+        <table>
+          <thead><tr><th>Permission</th><th>Why we ask</th></tr></thead>
+          <tbody>
+            <tr><td class="tag">Internet / network state</td><td>To send text to the Gemini API for rewriting and to sync saved items to your anonymous account.</td></tr>
+            <tr><td class="tag">Microphone</td><td>Only used for Voice-to-Tone, and only while you're actively recording.</td></tr>
+            <tr><td class="tag">Notifications</td><td>To show reminders and updates you can turn off any time in Settings.</td></tr>
+            <tr><td class="tag">Receive boot completed</td><td>So a scheduled daily reminder still fires after you restart your phone — it doesn't run anything else at startup.</td></tr>
+            <tr><td class="tag">Vibrate</td><td>For haptic feedback on certain taps (e.g. confirming an action).</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="sec" id="gemini">
+      <div class="sec-num">04</div>
+      <h2>How rewriting works (Google Gemini)</h2>
+      <p>When you tap rewrite, the message text (and, for Voice-to-Tone, the transcribed text) is sent directly to Google's Gemini API for processing, along with the tone you selected. The rewritten result is returned to the app and shown to you.</p>
+      <p>Google processes this text under its own <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">Gemini API Additional Terms of Service</a> and <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a>. We don't control how long Google retains API requests for abuse-monitoring purposes; we encourage you to review Google's terms if you plan to rewrite sensitive text.</p>
+      <p>We recommend avoiding highly sensitive personal information (medical, financial, or otherwise confidential details) in text you submit for rewriting, the same way you would with any cloud AI service.</p>
+    </section>
+
+    <section class="sec" id="storage">
+      <div class="sec-num">05</div>
+      <h2>How your data is stored</h2>
+      <p>If you choose to save a rewrite, mark something as a favorite, or create a custom tone or snippet, that item is stored in Cloud Firestore (part of Firebase, operated by Google) under your anonymous device account. It is not visible to other users and is not linked to a real-world identity.</p>
+      <p>Your local usage statistics (which tones you use, daily streaks) stay entirely on your device in local storage — they're never uploaded anywhere, including to us.</p>
+    </section>
+
+    <section class="sec" id="notifications">
+      <div class="sec-num">06</div>
+      <h2>Notifications</h2>
+      <p>ToneFix can send two kinds of notifications, both of which you control from <strong>Settings → Daily Reminder</strong>:</p>
+      <ul>
+        <li><strong>Scheduled reminders</strong> (e.g. a daily nudge, a feature tip) generated on your device.</li>
+        <li><strong>Push notifications</strong> delivered via Firebase Cloud Messaging, which requires a device token to be registered with Google's servers so a message can be routed to your device. This token is not linked to your identity.</li>
+      </ul>
+    </section>
+
+    <section class="sec" id="third-party">
+      <div class="sec-num">07</div>
+      <h2>Third-party services</h2>
+      <p>ToneFix relies on the following services to function. Each only receives the minimum data needed for its purpose.</p>
+      <div class="tbl-wrap">
+        <table>
+          <thead><tr><th>Service</th><th>Purpose</th><th>Data involved</th></tr></thead>
+          <tbody>
+            <tr><td class="tag">Google Gemini API</td><td>Rewrites your text in the selected tone</td><td>Message text, selected tone</td></tr>
+            <tr><td class="tag">Firebase Authentication</td><td>Anonymous account so your saved items sync to you alone</td><td>Randomly generated device ID — no email/password</td></tr>
+            <tr><td class="tag">Cloud Firestore</td><td>Stores history, favorites, custom tones, snippets, feedback</td><td>The content listed above, tied to your anonymous ID</td></tr>
+            <tr><td class="tag">Firebase Cloud Messaging</td><td>Delivers push notifications</td><td>Device push token</td></tr>
+            <tr><td class="tag">Sentry</td><td>Crash and performance monitoring so we can fix bugs</td><td>Crash logs, device/app info; personal-info collection is explicitly disabled in our configuration</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>We don't use third-party advertising networks, and ToneFix does not sell your data to anyone, for any purpose.</p>
+    </section>
+
+    <section class="sec" id="retention">
+      <div class="sec-num">08</div>
+      <h2>Retention &amp; deletion</h2>
+      <ul>
+        <li>You can delete all saved history at any time from <strong>Settings → Clear All History</strong>. This is permanent and immediate.</li>
+        <li>Uninstalling the app stops all local data collection and cancels any scheduled reminders on that device.</li>
+        <li>To request deletion of data associated with your anonymous account that isn't covered by the in-app controls above, contact us using the details in <a href="#contact">Contact us</a> — include your app version and roughly when you used the app, since we have no name or email to look you up by otherwise.</li>
+        <li>Crash diagnostics sent to Sentry are retained according to Sentry's own data retention settings on our account, typically a limited number of days.</li>
+      </ul>
+    </section>
+
+    <section class="sec" id="rights">
+      <div class="sec-num">09</div>
+      <h2>Your rights &amp; choices</h2>
+      <p>Depending on where you live, you may have rights to access, correct, delete, or port your data, and to object to or restrict certain processing (for example, under the EU/UK GDPR or the California CCPA/CPRA). Because ToneFix doesn't collect your name or email, most of these rights are already exercisable directly in the app:</p>
+      <ul>
+        <li><strong>Access / delete</strong> — Settings → Clear All History, or uninstall the app.</li>
+        <li><strong>Notifications</strong> — turn off anytime in Settings → Daily Reminder, or via your device's system notification settings.</li>
+        <li><strong>Microphone</strong> — revoke at any time in Android Settings → Apps → ToneFix → Permissions.</li>
+      </ul>
+      <p>For anything not covered above, reach out via <a href="#contact">Contact us</a>.</p>
+    </section>
+
+    <section class="sec" id="children">
+      <div class="sec-num">10</div>
+      <h2>Children's privacy</h2>
+      <p>ToneFix is not directed at children, and we do not knowingly collect personal information from children under 13 (or the equivalent minimum age in your jurisdiction). If you believe a child has provided us with personal information, contact us and we will delete it.</p>
+    </section>
+
+    <section class="sec" id="security">
+      <div class="sec-num">11</div>
+      <h2>Security</h2>
+      <p>Data in transit to Google's Gemini API and Firebase services is encrypted (HTTPS/TLS). Firestore access is restricted by security rules scoped to your anonymous account. No method of transmission or storage is 100% secure, and we can't guarantee absolute security, but we work to protect your information using industry-standard practices.</p>
+    </section>
+
+    <section class="sec" id="transfers">
+      <div class="sec-num">12</div>
+      <h2>International data transfers</h2>
+      <p>Google's Gemini API, Firebase, and Sentry may process and store data on servers located outside your country of residence, including in the United States. By using ToneFix, you understand your information may be transferred to and processed in these locations.</p>
+    </section>
+
+    <section class="sec" id="changes">
+      <div class="sec-num">13</div>
+      <h2>Changes to this policy</h2>
+      <p>We may update this policy as ToneFix changes. If we make material changes, we'll update the "last updated" date at the top of this page, and where appropriate, notify you in-app. Continued use of ToneFix after changes take effect means you accept the revised policy.</p>
+    </section>
+
+    <section class="sec" id="contact">
+      <div class="sec-num">14</div>
+      <h2>Contact us</h2>
+      <p>Questions, concerns, or a deletion request? Reach out at <a href="mailto:gulshidzada0089@gmail.com">gulshidzada0089@gmail.com</a>.</p>
+      <p>ToneFix is developed by Gulshid Zada.</p>
+    </section>
+
+    <footer class="foot">
+      <p>© 2026 ToneFix. This page is also linked from within the app under Settings → Privacy Policy, and from the ToneFix Google Play listing.</p>
+    </footer>
+
+  </main>
+</div>
+
+</body>
+</html>
